@@ -48,7 +48,6 @@ Chatbot: Goodbye!
 
 ## Contributors
 
-- [Your Name]
 
 Feel free to contribute to the project by enhancing the code or adding new features. If you find any issues or have suggestions for improvement, please create an issue on the [GitHub repository](https://github.com/yourusername/joi-chatbot).
 
