@@ -41,3 +41,63 @@ This chatbot program is distributed under the [MIT License](LICENSE).
 
 ## Disclaimer
 This chatbot is a basic example and may not handle complex conversations or understand nuanced queries. It is recommended for educational purposes and may be enhanced for more sophisticated use cases. Use at your own discretion.
+
+
+# Movie Recommendation System
+
+## Overview
+
+This R script provides a simple movie recommendation system based on cosine similarity between movie descriptions. The program uses the "tm" and "proxy" packages to process text data and calculate similarity scores.
+
+## Installation
+
+Before running the script, make sure to install the required R packages. You can do this by running the following commands in your R environment:
+
+```R
+if (!require("tm")) install.packages("tm", dependencies=TRUE)
+if (!require("proxy")) install.packages("proxy", dependencies=TRUE)
+```
+
+After installing the packages, load them using:
+
+```R
+library(tm)
+library(proxy)
+```
+
+## Usage
+
+1. Define your movie dataset with titles and descriptions.
+2. Create a corpus and document-term matrix (DTM) from the movie descriptions.
+3. Compute cosine similarity between movie descriptions.
+4. Use the `get_recommendations` function to get movie recommendations based on a user's preference.
+
+Example:
+
+```R
+# Example usage:
+user_preference <- "The Shawshank Redemption"
+recommendations <- get_recommendations(user_preference)
+cat("Recommended movies for", user_preference, ":\n", recommendations, "\n")
+```
+
+## Functionality
+
+The program includes the following functionality:
+
+- **Loading Packages:** The script checks for the presence of required packages and installs them if necessary.
+- **Data Preparation:** A dataset of movies is provided as an example, but you can replace it with your own dataset.
+- **Cosine Similarity:** The script calculates cosine similarity between movie descriptions using a document-term matrix.
+- **Recommendation Function:** The `get_recommendations` function takes a movie title as input and returns a list of recommended movies based on similarity scores.
+
+Feel free to customize the script and adapt it to your own movie dataset.
+
+## License
+
+This program is licensed under the [MIT License](LICENSE). You are free to modify and distribute the code for personal or commercial use. See the [LICENSE](LICENSE) file for details.
+
+## Contributors
+
+If you have any suggestions or improvements, feel free to contribute to the project.
+
+Happy movie recommending!
